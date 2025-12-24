@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff5f9e, #ffc1cc);
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HERO */
+.hero h1 {
+  font-size: 2.2rem;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #fff;
+  color: #ff5f9e;
+  margin-top: 25px;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* PHOTO MESSAGE */
+.photo-container {
+  position: relative;
+  max-width: 340px;
+}
+
+.photo-container img {
+  width: 100%;
+  border-radius: 22px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.overlay-text {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 105, 180, 0.6);
+  color: #fff;
+  padding: 22px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overlay-text h2 {
+  margin-bottom: 10px;
+}
+
+.overlay-text p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.overlay-text span {
+  margin-top: 15px;
+  font-style: italic;
+}
+
+/* FINAL */
+.signature {
+  margin-top: 20px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* HIDDEN */
+.hidden {
+  display: none;
+}
+
+/* FLOATING HEARTS */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 20px;
+  animation: floatUp 6s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.5);
+    opacity: 0;
+  }
+}
